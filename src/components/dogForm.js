@@ -5,8 +5,7 @@ const DogForm = (props) => {
     return (
         <div className="form">
             <form>
-            <input />
-            <button>Search</button>
+            <button>Find Dog</button>
             </form>
         </div>
         

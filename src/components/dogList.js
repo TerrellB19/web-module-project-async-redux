@@ -1,16 +1,14 @@
 import React from "react";
-import Dog from "./dog";
 import { connect } from "react-redux";
 
  const DogList = props => {
     const { dogs } = props;
-    let i = 0
-
+    let id = 0
+    const dogMessage = dogs.message
     return (
         <div className="dogdiv">
-            {
-                 dogs.message.map(image => <Dog key={i++} image={image}/>)
-            }
+            <img height='500px' src={dogMessage}/>
+            <h5>Search ID: {Date.now()}</h5>           
         </div>
        )
 }
